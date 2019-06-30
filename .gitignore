@@ -1,0 +1,5 @@
+*.pyc
+*.code-workspace
+.vscode/
+*/__pycache__/
+gamebin/*
