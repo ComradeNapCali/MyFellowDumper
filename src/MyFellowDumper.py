@@ -1,6 +1,7 @@
 from Crypto.Cipher import AES
 import GameDataParser
 import ModuleSaver
+import ModuleDecompiler
 
 class MyFellowDumper:
     def __init__(self):
@@ -18,5 +19,8 @@ class MyFellowDumper:
 
         saver = ModuleSaver.ModuleSaver(modules)
         saver.save_modules()
+
+        decompiler = ModuleDecompiler.ModuleDecompiler("gamedump")
+        decompiler.decompile_modules()
 
 MyFellowDumper()
